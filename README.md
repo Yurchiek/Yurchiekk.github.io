@@ -1,1 +1,0 @@
-# Yurchiekk.github.io
