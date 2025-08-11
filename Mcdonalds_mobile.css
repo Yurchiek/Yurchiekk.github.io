@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: #4c4c4c;
+    color: #50c878;
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: #00796b;
+    padding: 20px 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #50c878;
+    font-size: 24px; /* було 20px */
+    padding: 10px 14px;
+    background-color: #147a4b;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+/* ========== MAIN ========== */
+main {
+    padding: 20px;
+}
+
+.main_text {
+    font-size: 28px; /* було 24px */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main_text_mega {
+    font-size: 36px; /* було 32px */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ========== BURGER BLOCKS ========== */
+.BigBif,
+.BigTasty,
+.MacChicken,
+.DoubleRoyal,
+.BigMac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    gap: 15px;
+    font-size: 20px; /* було 18px */
+}
+
+main img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: #00796b;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer img {
+    width: 60px;
+    height: auto;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (min-width: 768px) {
+    .BigBif,
+    .BigTasty,
+    .MacChicken,
+    .DoubleRoyal,
+    .BigMac {
+        flex-direction: row;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .main_text {
+        font-size: 40px; /* було 36px */
+    }
+
+    .main_text_mega {
+        font-size: 56px; /* було 48px */
+    }
+
+    header ul li a {
+        font-size: 30px; /* було 28px */
+    }
+
+    footer img {
+        width: 100px;
+    }
+}
